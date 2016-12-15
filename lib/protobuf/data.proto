@@ -1,0 +1,34 @@
+message DataMessage {
+  optional int32 imu_temp = 1;
+  optional int32 imu_magnet_x = 2;
+  optional int32 imu_magnet_y = 3;
+  optional int32 imu_magnet_z = 4;
+  optional int32 imu_gyro_x = 5;
+  optional int32 imu_gyro_y = 6;
+  optional int32 imu_gyro_z = 7;
+
+
+  optional uint32 tritium_rx_error_count = 8;
+  optional uint32 tritium_tx_error_count = 9;
+  optional uint32 tritium_active_motor = 10;
+  optional uint32 tritium_error_flags = 11;
+  optional uint32 tritium_limit_flags = 12;
+  optional uint32 tritium_bus_current = 13;
+  optional uint32 tritium_bus_voltage = 14;
+  optional uint32 tritium_phase_current = 15;
+  optional float tritium_15v_rail = 16;
+  optional float tritium_3v3 = 17;
+  optional float tritium_1v9 = 18;
+  optional float tritium_motor_temp = 19;
+  optional float tritium_heatsink_temp = 20;
+  optional float tritium_dsp_temp = 21;
+  optional float tritium_dc_bus_amphour = 22;
+  optional float tritium_odometer = 23;
+  optional bool tritiums_on = 24;
+
+  optional int32 average_speed = 25;
+
+  optional int32 drive_mode = 26;
+  optional int32 cruise_speed = 27;
+  optional bool cruise_on = 28;
+}
